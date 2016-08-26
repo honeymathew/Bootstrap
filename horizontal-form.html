@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--suppress XmlInvalidId -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/darkly-bootstrap.min.css">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<div id="page">
+
+    <header class="container"><!--header-->
+        <div id="menu" class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
+                <button class="btn btn-success navbar-toggle"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse">
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                </button>
+                <div id="logo">
+                    <a href=""> This is it</a>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse"><!--to control navbar from chagng size while resizing brwsr-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav "><a href="index.html">Home</a> </li>
+                    <li class="nav"><a href="about.html">About</a> </li>
+                    <li class="nav active"><a href="contact.html">Contact</a> </li>
+                </ul>
+            </div>
+        </div>
+
+    </header><!--header ends-->
+
+    <section id="body" class="container">
+        <p>This is an example for form, this is to learn form designing</p>
+        <div class="row">
+            <form class="form-horizontal">
+               <div class="form-group">
+                    <label for="nameInput" class="control-label col-md-2 ">Your Name</label>
+                <div class="col-md-10">
+                    <input type="text" name="nameInput"
+                           class="form-control"
+                           placeholder="e.g Your Name"/>
+                </div>
+               </div>
+             <div class="form-group">
+                    <label for="emailInput" class="control-label col-md-2 ">Email</label>
+                <div class="col-md-10">
+                    <div class="input-group">
+                        <span class="input-group-addon">@</span>
+                        <input type="email" name="emailInput"
+                               class="form-control"
+                               placeholder="e.g Your email"/>
+                    </div>
+                </div>
+             </div>
+
+                 <!--dropdown-->
+                 <div class="form-group">
+                     <label class="control-label col-md-2">Favorite</label>
+                     <div class="col-md-10">
+             <!--        <div class="btn-group">
+                             <button class="btn btn-success">The Dude</button>
+                             <button class="btn btn-success">Doney</button>
+                             <button class="btn btn-success">TSachin</button>
+                         </div>-->
+
+                         <!--- above code channged  to below to make them toggleable-->
+
+                         <div class="btn-group btn-group-sm" data-toggle="buttons" >
+                             <label class="btn btn-success"><input type="radio">The Dude</label>
+                             <label class="btn btn-success"><input type="radio">Doney</label>
+                             <label class="btn btn-success"><input type="radio">TSachin</label>
+
+                             <div class="btn-group btn-group-sm"><!-- to create dropdown-5-04-->
+                                 <button class="btn btn-success">Other
+                                     </button>
+                                 <button class="btn btn-success" data-toggle="dropdown">
+                                     <span class="caret"></span> </button>
+                                 <ul class="dropdown-menu">
+                                     <li><a href="#" tabindex="-1">nice</a> </li>
+                                     <li><a href="#" tabindex="-1">to meeting</a> </li>
+                                     <li class="disabled"><a href="#" tabindex="-1">you</a> </li>
+                                 </ul>
+                             </div><!--dropdown div ends here-->
+
+
+                         </div>
+
+                     </div>
+                 </div>
+
+
+
+                <div class="form-group">
+                    <label class="control-label col-md-2 ">Reason</label>
+                <div class="col-md-10">
+            <!--      <select class="form-control">
+                        <option>Adoration</option>
+                        <option>ordering a white</option>
+                        <option>Complaint</option>
+                        <option>Lost</option>
+                    </select> -->
+                    <div class="dropdown">
+                        <button class="btn btn-success" id="pickButton">Pick One...</button>
+                        <button class="btn btn-success" data-toggle="dropdown"><span class="caret" ></span> </button>
+                        <ul class="dropdown-menu" id="reasonDropdown">
+                            <li><a href="#" tabindex="-1">Adoration</a> </li>
+                            <li><a href="#" tabindex="-1">ordering a white</a> </li>
+                            <li><a href="#" tabindex="-1">Complaint</a> </li>
+                            <li><a href="#" tabindex="-1">Lost</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2 ">Message</label>
+                    <div class="col-md-10">
+                        <textarea cols="40" rows="6" class="form-control"
+                                  placeholder="e.g message"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-10 col-md-offset-2">
+                        <input type="submit" value="submit" class="btn btn-success"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <h3>Contact</h3>
+        <address>
+            cheruthodukayil<br>
+            vettilappara<br>
+            malappuram
+        </address>
+        <p>Email:honeym90@gmail.com
+        </p>
+        <p>mob:631845152154
+        </p>
+    </section>
+
+</div>
+
+<hr/>
+<footer class="container">
+    <p> Text Placeholder courtesy<a href=""> Bootstrap</a> </p>
+</footer>
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/site.js"></script>
+
+<script> $(function(){ $('.nav-tabs a:first').tab('show'); });</script>
+
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--suppress XmlInvalidId -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/darkly-bootstrap.min.css">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+    <div id="page">
+
+        <header class="container"><!--header-->
+            <div id="menu" class="navbar navbar-default navbar-fixed-top">
+                <div class="navbar-header">
+                    <button class="btn btn-success navbar-toggle"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </button>
+                    <div id="logo">
+                        <a href=""> This is it</a>
+                    </div>
+                </div>
+                <div class="navbar-collapse collapse"><!--to control navbar from chagng size while resizing brwsr-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav "><a href="index.html">Home</a> </li>
+                        <li class="nav"><a href="about.html">About</a> </li>
+                        <li class="nav active"><a href="contact.html">Contact</a> </li>
+                    </ul>
+                </div>
+            </div>
+
+        </header><!--header ends-->
+
+        <section id="body" class="container">
+            <p>This is an example for form</p>
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="nameInput">Your Name</label>
+                        <input type="text" name="nameInput"
+                               class="form-control"
+                               placeholder="e.g Your Name"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput">Email</label>
+                        <input type="email" name="emailInput"
+                                class="form-control"
+                                placeholder="e.g Your email"/>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>Reason</label>
+                        <select class="form-control">
+                            <option>Adoration</option>
+                            <option>ordering a white</option>
+                            <option>Complaint</option>
+                            <option>Lost</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea cols="40" rows="6" class="form-control"
+                                placeholder="e.g message"></textarea>
+                    </div>
+
+                    <input type="submit" value="submit" class="btn btn-success"/>
+
+                </form>
+            </div>
+            <h3>Contact</h3>
+            <address>
+                cheruthodukayil<br>
+                vettilappara<br>
+                malappuram
+            </address>
+            <p>Email:honeym90@gmail.com
+            </p>
+            <p>mob:631845152154
+            </p>
+        </section>
+
+    </div>
+
+    <hr/>
+    <footer class="container">
+        <p> Text Placeholder courtesy<a href=""> Bootstrap</a> </p>
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script> <script src="js/bootstrap.min.js"></script>
+    <script> $(function(){ $('.nav-tabs a:first').tab('show'); });</script>
+
+</body>
+</html>
