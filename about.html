@@ -152,77 +152,135 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>List Example</h3>
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <span class="badge"><span class="glyphicon glyphicon-earphone"></span></span>
-                            <a href="#">steve</a> on <a href="#">twitter</a>
-                        </li>
-                        <li class="list-group-item active">
-                            <a href="#">mike</a> on <a href="#">twitter</a>
-                        </li>
-                        <li class="list-group-item"><a href="#">ginnerrobort</a> on <a href="#">flicker</a> </li>
-                        <li class="list-group-item">wikipedia</li>
-                        <li class="list-group-item"><a href="#">mikilelebowski</a> on <a href="#">facebook</a> </li>
-                        <li class="list-group-item"><a href="#">wonderland</a> on <a href="#">facebook</a> </li>
-                        <li class="list-group-item"><a href="#">nathanmartz</a> on <a href="#">facebook</a> </li>
-                    </ul>
+            <!--collapse example-->
+            <ul class="nav nav-pills navbar-default">
+                <li><a href="#list" data-toggle="collapse">List eple</a></li>
+                <li><a href="#pic" data-toggle="collapse">Pictures</a> </li>
+            </ul>
+
+            <div id="list" class="collapse">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>List Example</h3>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <span class="badge"><span class="glyphicon glyphicon-earphone"></span></span>
+                                <a href="#">steve</a> on <a href="#">twitter</a>
+                            </li>
+                            <li class="list-group-item active">
+                                <a href="#">mike</a> on <a href="#">twitter</a>
+                            </li>
+                            <li class="list-group-item"><a href="#">ginnerrobort</a> on <a href="#">flicker</a> </li>
+                            <li class="list-group-item">wikipedia</li>
+                            <li class="list-group-item"><a href="#">mikilelebowski</a> on <a href="#">facebook</a> </li>
+                            <li class="list-group-item"><a href="#">wonderland</a> on <a href="#">facebook</a> </li>
+                            <li class="list-group-item"><a href="#">nathanmartz</a> on <a href="#">facebook</a> </li>
+                        </ul>
+                    </div>
                 </div>
+
             </div>
 
-
-            <!--thumbnails-->
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="thumbnail">
-                        <a href="#"><img src="images/lemon.jpg" alt="1" class="img-responsive"></a>
-                    <div class="caption">
-                        <h3>First</h3>
-                        <p>Bootstrap is a free and open-source front-end web framework for designing websites and web applications.
-                            It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other
-                            Bootstrap, originally named Twitter Blueprint, was developed by Mark Otto and Jacob Thornton at Twitter
-                            as a framework to encourage consistency across internal tools.
-                        </p>
+            <div id="pic" class="collapse">
+                <!--thumbnails-->
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="thumbnail">
+                            <a href="#"><img src="images/lemon.jpg" alt="1" class="img-responsive"></a>
+                            <div class="caption">
+                                <h3>First</h3>
+                                <p>Bootstrap is a free and open-source front-end web framework for designing websites and web applications.
+                                    It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other
+                                    Bootstrap, originally named Twitter Blueprint, was developed by Mark Otto and Jacob Thornton at Twitter
+                                    as a framework to encourage consistency across internal tools.
+                                </p>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="thumbnail">
+                            <a href="#" class="thumbnail"><img src="images/girl.jpg" alt="2" class="img-responsive"></a>
+                            <div class="caption">
+                                <h3>Second</h3>
+                                <p>Bootstrap is a free and open-source front-end web framework for designing websites and web applications.
+                                    It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other
+                                    Bootstrap, originally named Twitter Blueprint, was developed by Mark Otto and Jacob Thornton at Twitter
+                                    as a framework to encourage consistency across internal tools.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="thumbnail">
-                        <a href="#" class="thumbnail"><img src="images/girl.jpg" alt="2" class="img-responsive"></a>
-                        <div class="caption">
-                            <h3>Second</h3>
-                            <p>Bootstrap is a free and open-source front-end web framework for designing websites and web applications.
-                                It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other
-                                Bootstrap, originally named Twitter Blueprint, was developed by Mark Otto and Jacob Thornton at Twitter
-                                as a framework to encourage consistency across internal tools.
-                            </p>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="thumbnail">
+                            <a href="#" class="thumbnail"><img src="images/Ram (13).jpg" alt="3" class="img-responsive"></a>
+                            <div class="caption">
+                                <h3>Third</h3>
+                                <p>Bootstrap is a free and open-source front-end web framework for designing websites and web applications.
+                                    It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="thumbnail">
-                        <a href="#" class="thumbnail"><img src="images/Ram (13).jpg" alt="3" class="img-responsive"></a>
-                        <div class="caption">
-                            <h3>Third</h3>
-                            <p>Bootstrap is a free and open-source front-end web framework for designing websites and web applications.
-                                It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other
-                            </p>
-                        </div>
+                <!--thumbnails ends-->
+            </div>
+
+        <hr/>
+
+        <!--accordian div-->
+        <div id="accordion" class="panel-group">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <a href="#first" data-toggle="collapse"
+                                data-parent="#accordion">First</a>
+                    </div>
+                </div>
+                <div class="panel-collapse collapse in" id="first">
+                    <div class="panel-body">
+                        <img src="images/Ram (37).jpg">
                     </div>
                 </div>
             </div>
-            <!--thumbnails ends-->
+
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <a href="#second" data-toggle="collapse"
+                           data-parent="#accordion">Second</a>
+                    </div>
+                </div>
+                <div class="panel-collapse collapse" id="second">
+                    <div class="panel-body">
+                        <img src="images/lime.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <a href="#third" data-toggle="collapse"
+                           data-parent="#accordion ">Third</a>
+                    </div>
+                </div>
+                <div class="panel-collapse collapse" id="third">
+                    <div class="panel-body">
+                        <img src="images/Ram (13).jpg">
+                    </div>
+                </div>
+            </div>
+
+        </div><!--accordion ends-->
 
         </section>
 
-    <!--</div>-->
 
-    <hr/>
-    <footer class="container">
-        <p> Text Placeholder courtesy<a href="">Bootstrap</a> </p>
-    </footer>
+
+     <hr/>
+        <footer class="container">
+            <p> Text Placeholder courtesy<a href="">Bootstrap</a> </p>
+         </footer>
     </div>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script> <script src="js/bootstrap.min.js"></script>
     <script> $(function(){ $('.nav-tabs a:first').tab('show'); });</script>
