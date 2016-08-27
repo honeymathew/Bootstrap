@@ -129,6 +129,9 @@
                     </div>
                 </div>
             </form>
+
+            <a href="#sentDialog" class="btn btn-info" data-toggle="modal">Show Dialog...</a><!-- for modal-->
+
         </div>
         <h3>Contact</h3>
         <address>
@@ -141,14 +144,29 @@
         <p>mob:631845152154
         </p>
     </section>
-
+    <hr/>
+    <footer class="container">
+        <p> Text Placeholder courtesy<a href=""> Bootstrap</a> </p>
+    </footer>
 </div>
 
-<hr/>
-<footer class="container">
-    <p> Text Placeholder courtesy<a href=""> Bootstrap</a> </p>
-</footer>
+    <div class="modal" id="sentDialog" tabindex="-1"><!--modal div-->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#" class="close" data-dismiss="modal">&times;</a>
+                    <h4>Thanks for clicking</h4>
+                </div>
+                <div class="modal-body">
+                    <p>This form doesn't work....</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div><!--modal div ends-->
 
+    </div>
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="js/jquery-3.1.0.min.js"></script>
